@@ -20,17 +20,17 @@ int main() {
     // -------------------- Carta 1 --------------------
     printf("Cadastro da primeira carta:\n");
 
-    printf("Escolha o estado (A-H): ");
-    scanf(" %c", &carta1.estadoLetra);
-
     printf("Nome do estado: ");
     scanf(" %[^\n]", carta1.estadoNome);
 
-    printf("Escolha a cidade (1-4): ");
-    scanf("%d", &carta1.cidadeNumero);
+    printf("Escolha a letra do estado (A-H): ");
+    scanf(" %c", &carta1.estadoLetra);
 
     printf("Nome da cidade: ");
     scanf(" %[^\n]", carta1.cidadeNome);
+
+    printf("Escolha o número da cidade (1-4): ");
+    scanf("%d", &carta1.cidadeNumero);
 
     sprintf(carta1.codigo, "%c%d", carta1.estadoLetra, carta1.cidadeNumero);
 
@@ -49,17 +49,17 @@ int main() {
     // -------------------- Carta 2 --------------------
     printf("\nCadastro da segunda carta:\n");
 
-    printf("Escolha o estado (A-H): ");
-    scanf(" %c", &carta2.estadoLetra);
-
     printf("Nome do estado: ");
     scanf(" %[^\n]", carta2.estadoNome);
 
-    printf("Escolha a cidade (1-4): ");
-    scanf("%d", &carta2.cidadeNumero);
+    printf("Escolha a letra do estado (A-H): ");
+    scanf(" %c", &carta2.estadoLetra);
 
     printf("Nome da cidade: ");
     scanf(" %[^\n]", carta2.cidadeNome);
+
+    printf("Escolha o número da cidade (1-4): ");
+    scanf("%d", &carta2.cidadeNumero);
 
     sprintf(carta2.codigo, "%c%d", carta2.estadoLetra, carta2.cidadeNumero);
 
@@ -98,3 +98,4 @@ int main() {
 
     return 0;
 }
+
